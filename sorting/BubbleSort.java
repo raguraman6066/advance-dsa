@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] a = { 2, 5, 6, 10, 1 };
+        int[] a = { 12, 2, 5, 6, 10, 11 };
         for (int i : a) {
             System.err.print(i + ", ");
 
@@ -14,8 +14,8 @@ public class BubbleSort {
     }
 
     public static void BubbleSort(int[] a) {
-        boolean isSorted = true;
         for (int i = 0; i < a.length - 1; i++) {
+            boolean isSorted = true;
 
             for (int j = 0; j < a.length - 1 - i; j++) {
                 if (a[j] > a[j + 1]) {
