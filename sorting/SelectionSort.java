@@ -1,6 +1,6 @@
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] a = { 2, 8, 22, 7, 1, 90, 30 };
+        int[] a = { 2, 8, 22, 7, 1, 90, 30, 0 };
 
         selectionSort(a);
         for (int i : a)
@@ -10,7 +10,7 @@ public class SelectionSort {
 
     public static void selectionSort(int[] a) {
 
-        for (int i = 0; i < a.length; i++) {
+        for (int i = 0; i < a.length - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < a.length; j++) {
                 if (a[minIndex] > a[j]) {
